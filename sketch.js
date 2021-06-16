@@ -157,36 +157,7 @@ function draw() {
 
 
 
-  if(particles!=null)
-  {
-     particles.display();
-      
-      if (particles.body.position.y>650)
-      {
-            if (particles.body.position.x < 100) 
-            {
-                score=score+500;      
-                particles=null;
-                                      
-            }
-
-
-            else if (particles.body.position.x < 150 && particles.body.position.x > 310 ) 
-            {
-                  score = score + 100;
-                  particles=null;
-                  
-
-            }
-            else if (particles.body.position.x < 350 && particles.body.position.x > 420 )
-            {
-                  score = score + 200;
-                  particles=null;
-                  
-            }  
-          }    
-            
-      }
+  
 
 
   drawSprites();
